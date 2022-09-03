@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+}
+body {
+    background-color: rgb(245, 243, 243);
+}
+
+p {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: rgb(0, 201, 184);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.btn1,
+.btn2,
+.btn3,
+.btn4, .applyBtn {
+    background-color: rgb(0, 201, 184);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 9px;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+}
+.btn1:hover,
+.btn3:hover {
+    background-color: rgb(2, 192, 176);
+    color: rgb(240, 239, 239);
+}
+.applyBtn{
+    width: 80px;
+}
+
+.btn2,
+.btn4 {
+    color: rgb(0, 201, 184);
+    border: 1px solid rgb(0, 201, 184);
+    padding: 9px 24px;
+    background-color: white;
+}
+.btn2:hover,
+.btn4:hover {
+    background-color: rgb(4, 175, 161);
+    background-color: rgb(230, 230, 230);
+}
+
+.btn3,
+.btn4 {
+    width: 80px;
+    padding: 5px;
+}
+
+.welcome-icon {
+    width: 30px;
+}
+.home-nav {
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+.dropdown-container {
+    width: 55px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.home-antrian {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.antrian {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.antrian .nomor {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgb(0, 201, 184);
+    border-radius: 10px;
+}
+.antrian .nomor p {
+    color: rgb(0, 201, 184);
+    font-size: 50px;
+}
+
+.login-container {
+    display: flex;
+}
+.login-container .left {
+    flex: 40%;
+    background-color: rgb(0, 201, 184);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container .right {
+    flex: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-register {
+    width: 50%;
+}
+.ic-back {
+    width: 30px;
+    cursor: pointer;
+}
+
+.app {
+    background-color: salmon;
+    height: 100vh;
+    display: flex;
+}
+
+.app .sidebar {
+    background-color: rgb(0, 201, 184);
+    flex: 18%;
+    
+}
+.app .main-content {
+    background-color: rgb(245, 245, 245);
+    flex: 80%;
+    position: relative;
+}
+.app .main-content .header {
+    background-color: white;
+    height: 10%;
+}
+.header {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .logo img {
+    margin-right: 20px;
+}
+.header .title h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+.sidebar .profile {
+    text-align: center;
+    color: white;
+    flex: 30%;
+    line-height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 70px;
+    margin-bottom: 12px;
+}
+.sidebar .navigation {
+    flex: 70%;
+}
+.sidebar .navigation ul {
+    margin-top: 20px;
+}
+.sidebar .navigation ul li.active::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: white;
+    right: 0;
+}
+.sidebar .navigation ul li img {
+    width: 28px;
+    margin-right: 12px;
+}
+.sidebar .navigation ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.sidebar .navigation ul li a {
+    color: #f1f1f1;
+}
+.main-content {
+    overflow-y: scroll;
+}
+.main {
+    height: 100%;
+    padding: 30px;
+}
+.dashboard {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.form-image input {
+    width: 50%;
+}
+.poliklinik .card {
+    padding: 18px;
+    margin-top: 12px;
+}
+.poliklinik .table-header {
+    display: flex;
+    justify-content: space-between;
+}
+.form-poli input{
+    max-width: 400px;
+}
+
+.form-width{
+    max-width: 400px;
+}
+.label-form{
+    font-weight: bold;
+    margin-bottom: 9px;
+    font-size: 14px;
+}
+.home-status .status{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgb(0, 201, 184);
+    border-radius: 10px;
+}
+.home-status .antrian{
+    margin: 10px 60px;
+
+}
+.home-status {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+
+.pasien_baru{
+    flex: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    overflow-y: scroll;
+    align-items: flex-start;
+}
+
+.antrian_content{
+    display: flex;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+}
